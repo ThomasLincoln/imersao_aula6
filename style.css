@@ -42,29 +42,84 @@ button{
 
 aside{
     grid-area: aside;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 main{
     grid-area: main;
 }
-.listaGeneros{
-    background-color: seagreen;
+
+.formulario{
+    height: 48%;
+    width: 98%;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    
+}
+
+/* aqui vão ser as edições da área main */
+main{
+    margin-left: 2%;
+    width: 96%;
+    height: 97%;
+    margin-top:8px;
+    overflow: scroll;
+}
+table#biblioteca, table#generos{
+    border-collapse: collapse;
+}
+
+table#biblioteca td, table#generos td{
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.headBiblioteca{
+    color:black;
+    font-size: 25px;
+}
+
+img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    height:300px;
+}
+
+table{
+    font-size:small;
+}
+.sinopse{
+    text-align: justify;
+    width: 400px;
+    padding-right: 20px;
+}
+
+/*  aqui fica as alterações da lista de generos*/
+
+.buscarGeneros{
     width: 98%;
     height: 48%;
     margin-left: 10px;
     margin-top: 5px;
 }
 
+#generos{
+    text-align: center;
+}
+
 .formulario{
-    background-color: sienna;
-    height: 48%;
-    width: 98%;
-    margin-left: 10px;
+    padding-left: 50px;
+    padding-top: 60px;
+}
+input{
     margin-top: 10px;
 }
-main{
-    background-color: skyblue;
-    margin-left: 2%;
-    width: 96%;
-    height: 97%;
-    margin-top:8px;
+
+.buscarGeneros{
+    padding-left: 50px;
+    padding-top: 80px;
+}
+.inputTexto{
+    border-radius: 5px;
 }

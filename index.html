@@ -9,29 +9,39 @@
 </head>
 <body>
     <div class="container" id="container">
-        <main></main>
-        <aside>
-            <div class="listaGeneros">
-                <table width="100%">
-                    <thead>
-                        <tr>
-                            <th>Genêro</th>
-                            <th>Quantidade</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tabelaGeneros">
+        <main>
+            <table width="100%" id="biblioteca">
+                <thead class="headBiblioteca">
+                    <tr>
+                        <th>Imagem</th>
+                        <th>Título</th>
+                        <th>Sinopse</th>
+                    </tr>
+                </thead>
+                <tbody class="listaBiblioteca" id="listaBibliotecas">
+                </tbody>
+            </table>
+        </main>
 
-                    </tbody>
-                </table>
+        <aside>
+            <div class="buscarGeneros">
+                <input type="text" placeholder="Digite um Genêro" id="inputGeneros" class="inputTexto">
+                <p><input type="button" onClick="busca()" class="btEnviar" value="Pesquisar"></p>
+                
+                <div id="resultado">
+
+                </div>
             </div>
             <div class="formulario">
-                <input type="text" placeholder="Nome do livro"/>
-                <input type="text" placeholder="link da capa"/>
-                <input type="text" placeholder="Sinopse"/>
-                <input type="button" value="Enviar"/>
+                <input type="text" placeholder="Nome do livro" id="title" class="inputTexto"/>
+                <input type="text" placeholder="link da capa" id="capinha" class="inputTexto"/>
+                <input type="text" placeholder="Sinopse" id="sinopses" class="inputTexto"/>
+                <input type="text" placeholder="Gênero" id="generoInput" class="inputTexto"/>
+                <P><input type="button" onclick="salvaLivro()" value="Enviar"></P>
+                
             </div>
         </aside>
     </div>
-    
+    <script src="app.js"></script>
 </body>
 </html>
